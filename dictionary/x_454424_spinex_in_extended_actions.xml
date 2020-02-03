@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="task" label="Extended Actions" max_length="40" name="x_454424_spinex_in_extended_actions" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="CustomField1" max_length="250" name="customfield1" type="string"/>
+        <element label="CustomField2" max_length="40" name="customfield2" type="boolean"/>
+    </element>
+</database>

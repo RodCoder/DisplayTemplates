@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script/>
+        <description>My application landing page</description>
+        <direct>false</direct>
+        <endpoint>x_454424_spinex_in_Index.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+  <j:jelly
+    trim="false"
+    xmlns:j="jelly:core"
+    xmlns:g="glide"
+    xmlns:j2="null"
+    xmlns:g2="null"
+  >
+<g:evaluate> 
+      var docType = '&lt;!DOCTYPE HTML&gt;'; 
+  </g:evaluate> 
+  <g2:no_escape> 
+      $[docType] 
+  </g2:no_escape>
+    <head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ServiceNow App</title>
+<!-- handle security token for API requests -->
+  <div style="display:none">
+    <g:evaluate object="true">
+      var session = gs.getSession(); var token = session.getSessionToken(); if
+      (token=='' || token==undefined) token = gs.getSessionToken();
+    </g:evaluate>
+  </div>
+  <script>
+    window.servicenowUserToken = '$[token]'
+  </script>
+  <!-- handle security token for API requests -->
+  </head>
+<body>
+<div id="root">HERE</div>
+	<img src="rod.jpg" width="683" height="683"/>
+<script type="text/javascript" src="/api/spinex_app/container/js/vendor-c4d92e29e931a8f8d682.js"></script><script type="text/javascript" src="app-dd7f028b7e2a2f3bfa62.js"></script></body>
+</j:jelly>]]></html>
+        <name>Index</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-02-03 19:40:40</sys_created_on>
+        <sys_id>cb0c25bcdb3a00102a56dde74896198c</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Index</sys_name>
+        <sys_package display_value="Spinex Incident Manager" source="x_454424_spinex_in">f1496db8db3a00102a56dde7489619af</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Spinex Incident Manager">f1496db8db3a00102a56dde7489619af</sys_scope>
+        <sys_update_name>sys_ui_page_cb0c25bcdb3a00102a56dde74896198c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-02-03 21:01:54</sys_updated_on>
+    </sys_ui_page>
+</record_update>
